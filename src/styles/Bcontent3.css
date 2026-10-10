@@ -1,0 +1,413 @@
+
+
+.curve-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+
+  background: radial-gradient(
+      circle at top,
+      rgba(212, 175, 55, 0.08),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom,
+      rgba(194, 106, 45, 0.08),
+      transparent 40%
+    ),
+    linear-gradient(180deg, #0f0c0a 0%, #16110d 45%, #20140d 100%);
+}
+
+
+.curve-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+
+  background: url("/smoke.png") top center / cover no-repeat;
+  opacity: 0.12;
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+.curve-section::after {
+  content: "";
+  position: absolute;
+  bottom: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 700px;
+  height: 350px;
+
+  background: radial-gradient(rgba(212, 175, 55, 0.12), transparent 70%);
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+.curve-svg,
+.ellarum-wrapper,
+.events-slider {
+  position: relative;
+  z-index: 2;
+}
+
+
+.curve-svg {
+  width: 100%;
+  height: 140px;
+  margin-bottom: -150px;
+}
+
+.curve-text {
+  font-size: 82px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  fill: #d4af37;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.curve-text textPath {
+  animation: moveText 18s linear infinite;
+}
+
+@keyframes moveText {
+  from {
+    startOffset: 0%;
+  }
+  to {
+    startOffset: 100%;
+  }
+}
+
+
+.ellarum-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: -80px;
+  margin-bottom: -80px;
+
+  position: relative;
+}
+
+.ellarum-vanga {
+  width: 620px;
+  height: 760px;
+
+  object-fit: contain;
+  display: block;
+
+  margin: 0;
+
+  filter: drop-shadow(0 35px 60px rgba(0, 0, 0, 0.45))
+    drop-shadow(0 0 25px rgba(212, 175, 55, 0.18));
+
+  transition: 0.4s;
+}
+
+.ellarum-vanga:hover {
+  transform: translateY(-10px) scale(1.04);
+}
+
+.chicken-float {
+  position: absolute;
+  top: 50%;
+  width: 180px;
+  height: auto;
+
+  object-fit: contain;
+  z-index: 3;
+  pointer-events: none;
+
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+
+  animation: chickenFloat 4.5s ease-in-out infinite;
+}
+
+.chicken-float.left {
+  left: 4%;
+  transform: translateY(-50%) rotate(-10deg);
+}
+
+.chicken-float.right {
+  right: 4%;
+  transform: translateY(-50%) rotate(10deg);
+  animation-name: chickenFloatRight;
+  animation-delay: 1.4s;
+}
+
+@keyframes chickenFloat {
+  0% {
+    transform: translateY(-50%) translateX(0px) rotate(-10deg);
+  }
+
+  25% {
+    transform: translateY(-70%) translateX(-4px) rotate(-7deg);
+  }
+
+  50% {
+   transform: translateY(-110%) translateX(0px) rotate(-3deg);
+  }
+
+  75% {
+    transform: translateY(-70%) translateX(4px) rotate(-7deg);
+  }
+
+  100% {
+    transform: translateY(-50%) translateX(0px) rotate(-10deg);
+  }
+}
+
+@keyframes chickenFloatRight {
+  0% {
+    transform: translateY(-50%) translateX(0px) rotate(10deg);
+  }
+
+  25% {
+    transform: translateY(-30%) translateX(4px) rotate(7deg);
+  }
+
+  50% {
+    transform: translateY(-110%) translateX(0px) rotate(-3deg);
+  }
+
+  75% {
+    transform: translateY(-30%) translateX(-4px) rotate(7deg);
+  }
+
+  100% {
+    transform: translateY(-50%) translateX(0px) rotate(10deg);
+  }
+}
+
+.events-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 0 70px;
+}
+
+.slide-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.event-card {
+  width: 340px;
+
+  background: linear-gradient(180deg, #3a2416, #24160e);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  border-radius: 25px;
+
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+
+  flex-shrink: 0;
+
+  transition: 0.4s;
+}
+
+.event-card:hover {
+  transform: translateY(-12px) scale(1.03);
+}
+
+.event-card img {
+  width: 100%;
+  height: 240px;
+
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.event-card:hover img {
+  transform: scale(1.08);
+}
+
+.event-content {
+  padding: 24px;
+}
+
+.event-content h3 {
+  font-size: 25px;
+  color: #fff5e6;
+  margin-bottom: 10px;
+}
+
+.event-content p {
+  color: #d8d0c8;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.eventcontentbutton {
+  display: block;
+  margin: 0px auto;
+  padding: 15px 36px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #d4af37, #c46a2d);
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(196, 106, 45, 0.25);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.eventcontentbutton:hover {
+  background: linear-gradient(135deg, #e0bd4a, #d47736);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(196, 106, 45, 0.35);
+}
+
+.eventcontentbutton:active {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(196, 106, 45, 0.25);
+}
+
+@media (max-width: 768px) {
+  .curve-svg {
+    height: 70px;
+    margin-bottom: -55px;
+  }
+
+  .curve-text {
+    font-size: 34px;
+    letter-spacing: 4px;
+  }
+
+  .curve-section::before {
+    height: 130px;
+  }
+
+  .ellarum-wrapper {
+    margin-top: 10px;
+    margin-bottom: -40px;
+  }
+
+  .ellarum-vanga {
+    width: 300px;
+    height: auto;
+  }
+
+  .chicken-float {
+    width: 90px;
+  }
+
+  .chicken-float.left {
+    left: calc(50% - 175px);
+  }
+
+  .chicken-float.right {
+    right: calc(50% - 175px);
+  }
+
+  .events-slider {
+    padding: 0 0 50px;
+  }
+
+  .event-card {
+    width: 280px;
+  }
+
+  .event-card img {
+    height: 190px;
+  }
+
+  .event-content {
+    padding: 18px;
+  }
+
+  .event-content h3 {
+    font-size: 21px;
+  }
+
+  .event-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .event-content button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .curve-svg {
+    height: 55px;
+    margin-bottom: -60px;
+  }
+
+  .curve-text {
+    font-size: 74px;
+    letter-spacing: 2px;
+  }
+
+  .ellarum-wrapper {
+    margin-top: -20px;
+    margin-bottom: -30px;
+  }
+
+  .ellarum-vanga {
+    width: 250px;
+  }
+
+  .chicken-float {
+    width: 74px;
+  }
+
+  .chicken-float.left {
+    left: calc(50% - 128px);
+    left: 20px;
+  }
+
+  .chicken-float.right {
+    right: calc(50% - 128px);
+    right: -5px;
+  }
+
+  .event-card {
+    width: 230px;
+    height: 410px;
+    margin-top: 30px;
+  }
+
+  .event-card img {
+    height: 160px;
+  }
+}

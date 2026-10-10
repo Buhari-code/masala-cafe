@@ -1,0 +1,467 @@
+.catering {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 160px 8%;
+  background: #111;
+  text-align: center;
+}
+
+.catering-content {
+  max-width: 750px;
+  padding: 60px 40px;
+  border-radius: 30px;
+  background: #8b1e2d;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.catering-content h1 {
+  font-family: "Cinzel", serif;
+  font-size: 55px;
+  color: #d4af37;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.catering-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+.catering-btn {
+  padding: 14px 35px;
+  border: 2px solid #d4af37;
+  border-radius: 30px;
+  background: #d4af37;
+  color: #111;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.catering-btn:hover {
+  background: transparent;
+  color: #d4af37;
+  transform: translateY(-3px);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .catering {
+    padding: 60px 5%;
+  }
+
+  .catering-content {
+    padding: 45px 25px;
+  }
+
+  .catering-content h1 {
+    font-size: 42px;
+  }
+
+  .catering-content p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .catering {
+    padding: 90px 20px;
+    height: 80vh;
+  }
+
+  .catering-content {
+    padding: 40px 20px;
+    border-radius: 22px;
+  }
+
+  .catering-content h1 {
+    font-size: 34px;
+  }
+
+  .catering-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .catering-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
+.catering-price-section {
+  position: relative;
+  padding: 110px 5% 120px;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(139, 30, 45, 0.16),
+      transparent 40%
+    ),
+    #0b0b0b;
+}
+
+.catering-price-container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+
+.price-list-title {
+  margin: 0;
+  text-align: center;
+
+  font-family: "Cinzel", serif;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 600;
+
+  letter-spacing: 3px;
+  color: #f5f5f5;
+}
+
+.price-list-title::after {
+  content: "";
+
+  display: block;
+
+  width: 55px;
+  height: 2px;
+
+  margin: 18px auto 55px;
+
+  background: #d4af37;
+}
+
+.price-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.45);
+
+  scrollbar-width: thin;
+}
+
+.price-table {
+  min-width: 900px;
+
+  overflow: hidden;
+
+  background: #111;
+
+  color: #fff;
+}
+
+.price-main-header {
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    1fr
+    1fr
+    1fr
+    1fr;
+
+  min-height: 70px;
+
+  align-items: center;
+
+  background:
+    linear-gradient(
+      180deg,
+      #1b1b1b,
+      #131313
+    );
+
+  border-bottom: 1px solid
+    rgba(212, 175, 55, 0.45);
+
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.price-main-header div:first-child {
+  text-align: left;
+  padding-left: 32px;
+
+  color: #d4af37;
+}
+
+.price-category {
+  border-bottom: 1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.price-category-header {
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    1fr
+    1fr
+    1fr
+    1fr;
+
+  min-height: 55px;
+
+  align-items: center;
+
+  background: #181818;
+
+  border-bottom: 1px solid
+    rgba(255, 255, 255, 0.08);
+
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.price-category-header div:first-child {
+  text-align: left;
+
+  padding-left: 32px;
+
+  color: #d4af37;
+
+  font-size: 14px;
+
+  letter-spacing: 0.15em;
+}
+
+.price-data-row {
+  display: grid;
+
+  grid-template-columns:
+    1.4fr
+    1fr
+    1fr
+    1fr
+    1fr;
+
+  min-height: 58px;
+
+  align-items: center;
+
+  border-bottom: 1px solid
+    rgba(255, 255, 255, 0.055);
+
+  text-align: center;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.price-data-row:last-child {
+  border-bottom: none;
+}
+
+
+/* ITEM NAME */
+
+.price-data-row div:first-child {
+  text-align: left;
+
+  padding-left: 32px;
+
+  font-weight: 500;
+
+  color: #fff;
+}
+
+
+/* PRICE */
+
+.price-data-row div:not(:first-child) {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* HOVER */
+
+.price-data-row:hover {
+  background: rgba(212, 175, 55, 0.055);
+}
+
+.price-data-row:hover div:first-child {
+  color: #d4af37;
+}
+
+.biryani-category,
+.curry-category,
+.appetizers-category,
+.dessert-category {
+  background: #111;
+}
+
+.price-data-row div:nth-child(2),
+.price-data-row div:nth-child(3),
+.price-data-row div:nth-child(4),
+.price-data-row div:nth-child(5) {
+  font-variant-numeric: tabular-nums;
+}
+
+.price-enquiry {
+  max-width: 620px;
+
+  margin: 75px auto 0;
+
+  text-align: center;
+}
+
+.price-enquiry h3 {
+  margin: 0 0 15px;
+
+  font-family: "Cinzel", serif;
+
+  font-size: 30px;
+
+  font-weight: 500;
+
+  color: #fff;
+}
+
+.price-enquiry p {
+  margin: 0 auto 28px;
+
+  max-width: 520px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.price-enquiry-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 13px 24px;
+
+  border: 1px solid
+    rgba(212, 175, 55, 0.65);
+
+  border-radius: 50px;
+
+  background: transparent;
+
+  color: #d4af37;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.08em;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.price-enquiry-btn:hover {
+  background: #d4af37;
+
+  color: #111;
+
+  border-color: #d4af37;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 30px rgba(212, 175, 55, 0.15);
+}
+
+.price-enquiry-btn span {
+  transition: transform 0.3s ease;
+}
+
+.price-enquiry-btn:hover span {
+  transform: translate(3px, -3px);
+}
+@media (max-width: 768px) {
+
+  .catering-price-section {
+    padding: 80px 15px 90px;
+  }
+
+  .price-list-title {
+    font-size: 28px;
+
+    letter-spacing: 2px;
+  }
+
+  .price-list-title::after {
+    margin-bottom: 35px;
+  }
+
+  .price-table {
+    min-width: 850px;
+  }
+
+  .price-main-header {
+    min-height: 60px;
+  }
+
+  .price-category-header {
+    min-height: 50px;
+  }
+
+  .price-data-row {
+    min-height: 54px;
+  }
+
+  .price-enquiry {
+    margin-top: 55px;
+  }
+
+  .price-enquiry h3 {
+    font-size: 25px;
+  }
+
+}

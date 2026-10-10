@@ -1,0 +1,727 @@
+.menu-showcase {
+    padding: 110px 6%;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(212, 175, 55, 0.06),
+            transparent 35%
+        ),
+        #F3EBDD;
+}
+
+.section-title{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    margin-bottom:70px;
+}
+
+.section-title span{
+      color:#FFD15C;
+    letter-spacing:3px;
+    font-weight:700;
+}
+
+.section-title h2{
+    margin:18px 0;
+    font-size:55px;
+    color:#FFF7E7;
+    font-family:"Cinzel",serif;
+}
+
+.section-title p{
+       color:#FFF7E7;
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* Featured */
+
+.featured-dish {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #FFF8EC,
+        #F3E3C5
+    );
+
+    border-radius: 35px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 60px rgba(70, 40, 20, 0.12);
+
+    margin-bottom: 90px;
+}
+
+.featured-image img{
+
+    width:100%;
+    height:520px;
+
+    object-fit:cover;
+
+}
+
+.featured-content{
+
+    padding:60px;
+
+}
+
+.featured-content small{
+
+    color:#D4AF37;
+
+    letter-spacing:2px;
+
+    font-weight:bold;
+
+}
+
+.featured-content h2{
+
+    font-size:42px;
+
+    color:#2B170C;
+
+    margin:18px 0;
+
+    font-family:"Cinzel",serif;
+
+}
+
+.rating{
+
+    color:#F29F05;
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+.featured-content p{
+
+    line-height:2;
+
+    color:#666;
+
+}
+
+.dish-tags{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+.dish-tags span{
+
+    background:#FFF1D8;
+
+    color:#D97706;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+}
+
+/* =========================================================
+   NON-VEG SLIDER (Swiper)
+========================================================= */
+
+.nonveg-slider {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+
+    margin-top: 60px;
+}
+
+.nonveg-swiper {
+    width: 100%;
+    padding-bottom: 10px !important;
+}
+
+.slider-btn {
+    flex-shrink: 0;
+
+    width: 56px;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1px solid rgba(212, 175, 55, .5);
+    background: #3A2214;
+
+    color: #FFD15C;
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .25);
+}
+
+.slider-btn:hover {
+    background: #D4AF37;
+    color: #2B170C;
+    transform: scale(1.06);
+}
+
+/* Swiper adds this class automatically when an arrow has
+   nothing left to scroll to (e.g. desktop right now, since
+   there are only 3 dishes and 3 show at once). Dimming it
+   makes that state read as "nothing more to show" instead
+   of looking like a broken button. */
+.slider-btn.swiper-button-disabled {
+    opacity: .35;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* Cards */
+
+.dish-card {
+    width: 100%;
+    height: 500px;
+
+    background: #3A2214;
+
+    border-radius: 28px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid rgba(212, 175, 55, 0.2);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.dish-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #D4AF37;
+
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.2);
+}
+
+.dish-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    background: linear-gradient(
+        180deg,
+        #4B2D1B,
+        #2A170E
+    );
+
+    display: block;
+
+    flex-shrink: 0;
+
+    transition: transform 0.4s ease;
+}
+
+.dish-card:hover img {
+    transform: scale(1.05);
+}
+
+.dish-body {
+    height: 220px;
+
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    flex: 1;
+}
+
+.dish-body h3 {
+    min-height: 48px;
+
+    margin: 0 0 10px;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    color: #FFD15C;
+
+    font-family: "Cinzel", serif;
+}
+
+.dish-body p {
+    min-height: 65px;
+
+    margin: 0;
+
+    color: #E6D7C8;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+/* .dish-footer{
+
+margin-top:auto;
+
+padding-top:4px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.dish-footer span{
+
+font-size:10px;
+
+color:#D4AF37;
+
+letter-spacing:2px;
+
+font-weight:600;
+
+} */
+
+/* ================================
+   FEATURED DISH PRICE
+================================ */
+
+.featured-price {
+    margin: 0px 0 22px;
+}
+
+.featured-price span {
+    display: inline-block;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #B8842A;
+
+    font-family: "Cinzel", serif;
+
+    letter-spacing: 1px;
+}
+.dish-footer {
+    margin-top: auto;
+
+    padding-top: 5px;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.dish-footer span {
+    font-size: 12px;
+
+    color: #D4AF37;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+.dish-footer strong {
+    flex-shrink: 0;
+
+    font-size: 20px;
+
+    color: #FFD15C;
+
+    font-family: "Cinzel", serif;
+
+    white-space: nowrap;
+}
+
+/* Responsive */
+
+@media(max-width:1100px){
+
+.featured-dish{
+
+grid-template-columns:1fr;
+
+}
+
+.featured-content{
+
+padding:40px;
+
+}
+
+}
+
+@media(max-width:900px) {
+
+    .slider-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+.section-title h2{
+
+font-size:36px;
+
+}
+
+.featured-content h2{
+
+font-size:34px;
+
+}
+
+.featured-image img{
+
+height:320px;
+
+}
+
+}
+
+@media(max-width:600px) {
+
+    .nonveg-slider {
+        gap: 8px;
+    }
+
+    .slider-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .nonveg-swiper {
+        padding-bottom: 30px !important;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .menu-showcase {
+        padding: 80px 5%;
+        background: #F3EBDD;
+    }
+
+    .dish-card {
+        height: 460px;
+    }
+
+    .dish-card img {
+        height: 240px;
+    }
+
+    .dish-body {
+        height: 220px;
+        padding: 20px;
+    }
+
+    .dish-body h3 {
+        font-size: 18px;
+    }
+
+    .dish-body p {
+        font-size: 13px;
+    }
+}
+
+/*==========================
+VEG SPECIAL
+==========================*/
+/* 
+.veg-special{
+
+padding:120px 8%;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+background:
+radial-gradient(circle at top,
+rgba(255,209,92,.08) 0%,
+transparent 40%),
+
+linear-gradient(
+180deg,
+#402617,
+#2F1B11,
+#22140C
+);
+
+}
+
+.veg-left{
+
+height:620px;
+
+border-radius:30px;
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.veg-left img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+display:block;
+
+transition:.5s;
+
+}
+
+.veg-left:hover img{
+
+transform:scale(1.06);
+
+}
+
+.veg-overlay{
+
+position:absolute;
+
+left:0;
+right:0;
+bottom:0;
+
+padding:35px;
+
+background:linear-gradient(
+to top,
+rgba(0,0,0,.88),
+rgba(0,0,0,.45),
+transparent
+);
+
+color:white;
+
+}
+
+.veg-overlay h2{
+
+font-size:42px;
+
+line-height:1.1;
+
+margin:12px 0;
+
+font-family:"Cinzel",serif;
+
+color:#fff;
+
+}
+
+.veg-overlay p{
+
+margin-top:15px;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#F5F5F5;
+
+max-width:520px;
+
+}
+
+/* Right */
+/* 
+.veg-title span{
+
+color:#FFD15C;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+.veg-title h2{
+
+margin:20px 0;
+
+font-size:52px;
+
+ color:#FFF7E7;
+
+font-family:"Cinzel",serif;
+
+}
+
+.veg-title p{
+
+line-height:1.8;
+
+ color:#D6C8B9;
+
+margin-bottom:45px;
+
+}
+
+.veg-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:28px;
+
+}
+
+.veg-item{
+
+display:flex;
+
+align-items:center;
+
+gap:25px;
+
+padding:22px;
+
+background:white;
+
+border-radius:22px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.veg-item:hover{
+
+transform:translateX(8px);
+
+} */
+/* 
+.veg-item img{
+
+width:120px;
+
+height:120px;
+
+object-fit:contain;
+
+border-radius: 50%;
+
+flex-shrink:0;
+
+}
+
+.veg-item h3{
+
+font-size:34px;
+
+margin-bottom:10px;
+
+color:#2B170C;
+
+font-family:"Cinzel",serif;
+
+}
+
+.veg-item p{
+
+font-size:18px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+
+@media(max-width:992px){
+
+.veg-special{
+
+grid-template-columns:1fr;
+
+}
+
+.veg-left img{
+
+height:420px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.veg-title h2{
+
+font-size:36px;
+
+}
+
+.veg-overlay h2{
+
+font-size:32px;
+
+}
+
+.veg-item{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}  */

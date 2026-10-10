@@ -1,0 +1,454 @@
+
+
+.parotta-section {
+  position: relative;
+  width: 100%;
+  padding: 100px 4%;
+  overflow: hidden;
+
+  background: radial-gradient(
+      circle at right top,
+      rgba(212, 175, 55, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #1a120d, #23160f, #18110d);
+}
+
+
+.parotta-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 160px;
+  height: 2px;
+
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+}
+
+
+.parotta-section::before {
+  content: "";
+  position: absolute;
+  right: -150px;
+  top: 50px;
+
+  width: 600px;
+  height: 600px;
+
+  background: url("../assets/banana-pattern.png") no-repeat center / contain;
+  opacity: 0.05;
+
+  pointer-events: none;
+}
+
+.parotta-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1450px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.parotta-left {
+  max-width: 620px;
+  margin-bottom: 30px;
+}
+
+.small-title {
+  display: block;
+  color: #c48a1d;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.parotta-left h2 {
+  font-size: 62px;
+  font-weight: 800;
+  color: #f6c453;
+  line-height: 1.1;
+  margin: 0 0 25px;
+}
+
+.parotta-desc {
+  max-width: 620px;
+  margin: 0 0 35px;
+
+  font-size: 18px;
+  line-height: 1.8;
+  color: #d8d0c8;
+
+  text-align: left;
+}
+
+.stats-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-stars {
+  color: #f6c453;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.stat-number {
+  color: #fff7e6;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: #b8ac9e;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 34px;
+  background: rgba(212, 175, 55, 0.25);
+}
+
+
+
+.order-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.porder-btn {
+  width: 230px;
+  height: 60px;
+
+  border: none;
+  border-radius: 50px;
+
+  background: linear-gradient(135deg, #d4af37, #ff9800);
+
+  color: #fff;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.35s;
+
+  box-shadow: 0 18px 35px rgba(255, 152, 0, 0.25);
+}
+
+.porder-btn:hover {
+  transform: translateY(-5px);
+}
+
+
+.thought-box {
+  position: absolute;
+  left: 115%;
+  top: 50%;
+  width: 300px;
+  height: 220px;
+  opacity: 0;
+  transform: translate(20px, -50%) scale(0.8);
+  transition: 0.45s;
+  pointer-events: none;
+}
+
+.order-wrapper:hover .thought-box {
+  opacity: 1;
+  transform: translate(0, -50%) scale(1);
+}
+
+.bubble {
+  position: absolute;
+  background: #fff;
+  border: 3px solid #333;
+  border-radius: 50%;
+}
+
+.bubble1 {
+  width: 16px;
+  height: 16px;
+  left: 18px;
+  bottom: 60px;
+}
+
+.bubble2 {
+  width: 26px;
+  height: 26px;
+  left: 40px;
+  bottom: 42px;
+}
+
+.bubble3 {
+  width: 38px;
+  height: 38px;
+  left: 70px;
+  bottom: 70px;
+}
+
+.cloud {
+  position: absolute;
+
+  right: 0;
+  bottom: 5;
+
+  width: 240px;
+  height: 130px;
+
+  background: #fff;
+  border-radius: 80px;
+  border: 3px solid #333;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.cloud-top {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid #333;
+}
+
+.cloud-top.left {
+  width: 70px;
+  height: 70px;
+  top: -28px;
+  left: 10px;
+}
+
+.cloud-top.center {
+  width: 60px;
+  height: 60px;
+  top: -35px;
+  left: 82px;
+}
+
+.cloud-top.right {
+  width: 80px;
+  height: 80px;
+  top: -38px;
+  right: 8px;
+}
+
+
+
+.typing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  text-align: center;
+  color: #b45309;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.typing span {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.order-wrapper:hover .typing span:nth-child(1) {
+  animation: show 0.4s forwards;
+}
+
+.order-wrapper:hover .typing span:nth-child(2) {
+  animation: show 0.4s 0.4s forwards;
+}
+
+.order-wrapper:hover .typing span:nth-child(3) {
+  animation: show 0.4s 0.8s forwards;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.parotta-right {
+  flex: 0.95;
+}
+
+.video-wrap {
+  position: relative;
+}
+
+.kuthuimg {
+  position: absolute;
+  top: -50px;
+  left: -70px;
+  z-index: 3;
+
+  width: 340px;
+  height: auto;
+  object-fit: contain;
+
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.4));
+  transition: transform 0.4s ease;
+}
+
+.kuthuimg:hover {
+  transform: rotate(-3deg) scale(1.08);
+}
+
+.video-box {
+  width: 100%;
+  height: 560px;
+
+  overflow: hidden;
+  border-radius: 30px;
+
+  border: 2px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45),
+    0 0 25px rgba(212, 175, 55, 0.08);
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 992px) {
+  .parotta-container {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+
+  .parotta-left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .small-title {
+    letter-spacing: 5px;
+  }
+
+  .parotta-left h2 {
+    font-size: 48px;
+  }
+
+  .parotta-desc {
+    max-width: 100%;
+    margin: 10px auto 30px;
+  }
+
+  .stats-row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .video-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .kuthuimg {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 150px;
+    margin: 0 auto -30px;
+    display: block;
+  }
+
+  .video-box {
+    height: 430px;
+  }
+
+  .order-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .thought-box {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .parotta-section {
+    padding: 80px 20px;
+    bottom: -90px;
+  }
+
+  .small-title {
+    font-size: 14px;
+    letter-spacing: 4px;
+    position: absolute;
+    top: -40px;
+  }
+
+  .parotta-left h2 {
+    font-size: 38px;
+    position: absolute;
+    top: -15px;
+  }
+
+  .parotta-desc {
+    font-size: 16px;
+  }
+
+  .stats-row {
+    gap: 15px;
+  }
+
+  .stat-label {
+    font-size: 10px;
+  }
+
+  .kuthuimg {
+    width: 160px;
+  }
+.order-wrapper{
+    width:100%;
+}
+
+.porder-btn{
+    width:100%;
+    max-width:170px;
+    height: 50px;
+    display:block;
+    margin:auto;
+    font-size: 16px;
+}
+
+  .video-box {
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+}

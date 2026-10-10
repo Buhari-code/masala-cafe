@@ -1,0 +1,365 @@
+.footer{
+    width:100%;
+    background:linear-gradient(180deg,#1c130b,#120b06);
+    color:#fff;
+    padding:70px 8% 25px;
+    border-top:3px solid #d4af37;
+}
+
+.footer-top{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.footer-tag{
+    display:inline-block;
+    color:#D4AF37;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:15px;
+}
+
+.footer-top h2{
+    font-size:52px;
+    font-family:"Cinzel",serif;
+    color:#ffb300;
+    margin-bottom:18px;
+}
+
+.footer-comedy{
+    font-size:22px;
+    color:#ddd;
+    line-height:1.8;
+}
+
+.footer-comedy span{
+    color:#ff9800;
+    font-weight:700;
+}
+
+.footer-grid{
+    max-width:1300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:45px;
+    margin-bottom:55px;
+}
+
+.footer-box{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:30px;
+    transition:.35s;
+}
+
+.footer-box:hover{
+    transform:translateY(-6px);
+    border-color:#d4af37;
+    box-shadow:0 18px 35px rgba(0,0,0,.25);
+}
+
+.footer-box h3{
+    color:#ffb300;
+    font-size:24px;
+    margin-bottom:22px;
+    font-family:"Cinzel",serif;
+}
+
+.address{
+    display:flex;
+    align-items:flex-start;
+    gap:14px;
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.address svg{
+    color:#ff9800;
+    margin-top:5px;
+    flex-shrink:0;
+}
+
+.map-card{
+    width:100%;
+    height:180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:16px;
+    overflow:hidden;
+    text-decoration:none;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://maps.googleapis.com/maps/api/staticmap?center=839+Newark+Ave+Jersey+City+NJ&zoom=15&size=600x400&maptype=roadmap");
+
+    background-size:cover;
+    background-position:center;
+
+    transition:.35s;
+}
+
+.map-card:hover{
+    transform:scale(1.03);
+}
+
+.map-overlay{
+    text-align:center;
+    color:#fff;
+}
+
+.map-icon{
+    font-size:40px;
+    color:#ffb300;
+    margin-bottom:12px;
+}
+
+.map-overlay h4{
+    font-size:20px;
+    margin-bottom:6px;
+}
+
+.map-overlay span{
+    color:#ffb300;
+    font-size:15px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    margin-bottom:22px;
+}
+
+.contact-item svg{
+    color:#ff9800;
+    margin-top:5px;
+}
+
+.contact-item p{
+    color:#ddd;
+    line-height:1.9;
+    margin:0;
+}
+
+.hours-row{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.hours-row svg{
+    color:#ff9800;
+    margin-top:5px;
+}
+
+.hours-row strong{
+    color:#fff;
+    display:block;
+    margin-bottom:5px;
+}
+
+.hours-row p{
+    color:#ccc;
+    margin:0;
+    line-height:1.6;
+}
+
+.footer-social{
+    display:flex;
+    gap:18px;
+    margin-top:18px;
+    justify-content:flex-start;
+}
+
+.footer-social a{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#d4af37,#ff9800);
+    color:#fff;
+    font-size:20px;
+    transition:.35s;
+}
+
+.footer-social a:hover{
+    transform:translateY(-5px) scale(1.08);
+    box-shadow:0 10px 25px rgba(255,165,0,.4);
+}
+
+.footer-bottom{
+    padding-top:22px;
+    border-top:1px solid rgba(255,255,255,.1);
+    text-align:center;
+}
+
+.footer-bottom p{
+    margin:0;
+    font-size:16px;
+    color:#fff;
+}
+
+.footer-bottom span{
+    display:block;
+    margin-top:8px;
+    color:#aaa;
+    font-size:14px;
+}
+
+@media(max-width:992px){
+
+.footer-grid{
+    grid-template-columns:1fr;
+}
+
+.footer-top h2{
+    font-size:40px;
+}
+
+.footer-comedy{
+    font-size:19px;
+}
+
+}
+
+@media(max-width:600px){
+
+.footer{
+    padding:60px 20px 20px;
+}
+
+.footer-top h2{
+    font-size:30px;
+}
+
+.footer-comedy{
+    font-size:16px;
+}
+
+.footer-box{
+    padding:22px;
+}
+
+.footer-box h3{
+    font-size:21px;
+}
+
+.map-card{
+    height:160px;
+}
+
+.footer-social a{
+    width:48px;
+    height:48px;
+    font-size:18px;
+}
+
+}
+
+@media (max-width:500px){
+
+  .footer{
+    padding:50px 15px 20px;
+  }
+
+  .footer-top{
+    margin-bottom:35px;
+  }
+
+  .footer-tag{
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:10px;
+  }
+
+  .footer-top h2{
+    font-size:26px;
+    line-height:1.3;
+    margin-bottom:12px;
+  }
+
+  .footer-comedy{
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  .footer-grid{
+    gap:20px;
+    margin-bottom:35px;
+  }
+
+  .footer-box{
+    padding:18px;
+    border-radius:18px;
+  }
+
+  .footer-box h3{
+    font-size:20px;
+    margin-bottom:18px;
+  }
+
+  .address,
+  .contact-item,
+  .hours-row{
+    gap:10px;
+    margin-bottom:16px;
+  }
+
+  .address p,
+  .contact-item p,
+  .hours-row p{
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .map-card{
+    height:150px;
+    border-radius:14px;
+  }
+
+  .map-icon{
+    font-size:32px;
+  }
+
+  .map-overlay h4{
+    font-size:17px;
+  }
+
+  .map-overlay span{
+    font-size:13px;
+  }
+
+  .footer-social{
+    justify-content:center;
+    gap:14px;
+  }
+
+  .footer-social a{
+    width:42px;
+    height:42px;
+    font-size:16px;
+  }
+
+  .footer-bottom{
+    padding-top:18px;
+  }
+
+  .footer-bottom p{
+    font-size:14px;
+    line-height:1.6;
+  }
+
+  .footer-bottom span{
+    font-size:12px;
+  }
+
+}

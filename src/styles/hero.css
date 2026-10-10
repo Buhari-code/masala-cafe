@@ -1,0 +1,395 @@
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+}
+
+
+
+.hero-video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    filter:
+        brightness(.9   )
+        contrast(1.05)
+        saturate(1.1);
+
+    z-index:-3;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.68) 0%,
+        rgba(0,0,0,.48) 35%,
+        rgba(0,0,0,.22) 70%,
+        rgba(0,0,0,.40) 100%
+    );
+
+    z-index:-2;
+}
+
+
+.hero-content{
+
+    max-width:900px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    color:#fff;
+
+    padding-top:60px;
+}
+
+
+.hero-poster{
+
+    width:420px;
+
+    margin-bottom:15px;
+
+    filter:drop-shadow(0 20px 35px rgba(0,0,0,.45));
+
+    transition:.4s;
+}
+
+.hero-poster:hover{
+
+    transform:scale(1.04);
+
+}
+
+
+.hero h1{
+
+    font-size:56px;
+
+    line-height:1.15;
+
+    font-weight:700;
+
+    max-width:900px;
+    color: #fff;
+    margin-bottom:22px;
+}
+
+.hero h1 span{
+
+    color:#D4AF37;
+
+}
+
+.hero-desc{
+
+    max-width:720px;
+
+    font-size:20px;
+
+    color:#F5E6D3;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+}
+
+
+.hero-bottom{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    margin-top:15px;
+}
+
+/* Button */
+
+.hero-btns{
+
+    display:flex;
+
+    gap:25px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+}
+.pickup-btn{
+
+    width:190px;
+
+    height:58px;
+
+    border-radius:50px;
+
+    border:none;
+
+    background:linear-gradient(135deg,#D4AF37,#FF9800);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(255,152,0,.25);
+
+}
+
+.pickup-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(255,152,0,.45);
+
+}
+
+.btn-primary{
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff9800;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.btn-primary:hover{
+
+    background:#ffb000;
+
+    transform:translateY(-4px);
+}
+.delivery-btn{
+
+    width:190px;
+
+    height:58px;
+
+    border-radius:50px;
+
+    border:2px solid #D4AF37;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.delivery-btn:hover{
+
+    background:#D4AF37;
+
+    color:#2B1B12;
+
+    transform:translateY(-5px);
+
+}
+
+/* Paragraph */
+
+.hero p{
+
+    color:#ececec;
+
+    font-size:19px;
+
+    line-height:1;
+
+    max-width:850px;
+}
+
+/* ==========================
+TABLET
+========================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    height:auto;
+    min-height:100vh;
+}
+
+.hero-content{
+
+    padding:120px 25px 80px;
+}
+
+.hero-poster{
+
+    width:340px;
+
+    margin-top:0;
+}
+
+.hero h1{
+
+    font-size:46px;
+}
+
+.hero-bottom{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+}
+
+.hero p{
+
+    max-width:100%;
+}
+
+}
+@media(max-width:768px){
+
+.hero-content{
+
+    padding:110px 20px 70px;
+
+}
+
+.hero-poster{
+
+    width:260px;
+
+}
+
+.hero h1{
+
+    font-size:34px;
+
+}
+
+.hero-desc{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.hero-btns{
+
+    width:100%;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.pickup-btn,
+.delivery-btn{
+
+    width:100%;
+
+    max-width:300px;
+
+}
+
+}
+
+/* ==========================
+MOBILE
+========================== */
+
+@media(max-width:768px){
+
+.hero{
+
+    min-height:100vh;
+}
+
+.hero-content{
+
+    padding:110px 20px 60px;
+}
+
+.hero-poster{
+
+    width:270px;
+
+    margin-top:0;
+
+    margin-bottom:20px;
+}
+
+.hero-badge{
+
+    font-size:12px;
+}
+
+.hero h1{
+
+    font-size:34px;
+}
+
+.hero-bottom{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:18px;
+}
+
+.btn-primary{
+
+    width:220px;
+}
+
+.hero p{
+
+    font-size:16px;
+
+    line-height:1.7;
+}
+
+}

@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:#2A1B12;
+
+    overflow-x:hidden;
+
+    background:#F7F2E8;  
+
+    line-height:1.6;
+
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul,
+ol{
+    list-style:none;
+}
+
+img{
+    width:100%;
+    display:block;
+    user-select:none;
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    transition:.35s ease;
+
+}
+
+
+input,
+textarea,
+select{
+
+    border:none;
+
+    outline:none;
+
+    font-family:inherit;
+
+}
+
+
+section{
+
+    width:100%;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.container{
+
+    width:92%;
+
+    max-width:1450px;
+
+    margin:auto;
+
+}
+
+/*
+Dark Background   : #15110F
+Cream Background  : #F7F2E8
+Card Dark         : #221813
+Card Light        : #FFF8EE
+Gold              : #D4A017
+Copper            : #8B5A2B
+Red Accent        : #B83227
+Text Dark         : #2A1B12
+Text Light        : #F8F5F0
+Grey              : #8E857C
+*/
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection{
+
+    background:#D4A017;
+
+    color:#111;
+
+}
+
+
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#1A1613;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+        180deg,
+        #D4A017,
+        #B87333
+    );
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:linear-gradient(
+        180deg,
+        #F4B400,
+        #D98C2B
+    );
+
+}
+
+*{
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+h1,
+h2,
+h3,
+h4{
+
+    font-weight:700;
+
+    color:#2A1B12;
+
+}
+
+p{
+
+    color:#6F655C;
+
+}

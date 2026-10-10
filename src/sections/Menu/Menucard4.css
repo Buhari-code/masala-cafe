@@ -1,0 +1,952 @@
+.nonveg-section{
+
+    padding:120px 8%;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(212,175,55,.08),
+    transparent 35%),
+
+    linear-gradient(
+    180deg,
+    #3B2416 0%,
+    #2A180F 55%,
+    #1B110B 100%
+    );
+
+}
+
+.nonveg-heading{
+
+    text-align:center;
+
+    max-width:750px;
+
+    margin:0 auto 70px;
+
+}
+
+.nonveg-heading span{
+
+    color:#FFD15C;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+}
+
+.nonveg-heading h2{
+
+    margin:20px 0;
+
+    font-size:56px;
+
+    color:white;
+
+    font-family:"Cinzel",serif;
+
+}
+
+.nonveg-heading p{
+
+    color:#D8C7B8;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+.nonveg-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.nonveg-card{
+
+    background:#FFFBF5;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    box-shadow:
+    0 18px 45px rgba(0,0,0,.25);
+
+}
+
+.nonveg-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card-image{
+
+    overflow:hidden;
+
+}
+
+.card-image img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.nonveg-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.card-body{
+
+    padding:25px;
+
+}
+
+.card-body h3{
+
+    font-size:28px;
+
+    color:#2B170C;
+
+    margin-bottom:12px;
+
+    font-family:"Cinzel",serif;
+
+}
+
+.rating{
+
+    color:#F29F05;
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+.card-body p{
+
+    color:#6E6258;
+
+    line-height:1.8;
+
+}
+
+@media(max-width:1100px){
+
+.nonveg-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.nonveg-heading h2{
+
+font-size:38px;
+
+}
+
+.nonveg-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* =========================================================
+   NON VEG SECTION
+========================================================= */
+
+.nonveg-section {
+  padding: 110px 8%;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(212, 175, 55, 0.08),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      180deg,
+      #3b2416 0%,
+      #28170e 100%
+    );
+}
+
+
+/* Heading */
+
+.nonveg-heading {
+  max-width: 760px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.nonveg-heading span {
+  color: #d4af37;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.nonveg-heading h2 {
+  margin: 18px 0;
+
+  color: #fff7e7;
+
+  font-family: "Cinzel", serif;
+
+  font-size: 52px;
+  font-weight: 600;
+}
+
+.nonveg-heading p {
+  color: #d5c5b6;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* Grid */
+
+.nonveg-grid {
+  max-width: 1250px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+
+/* Card */
+
+.nonveg-card {
+  overflow: hidden;
+
+  background: #fffaf4;
+
+  border-radius: 20px;
+
+  border: 1px solid
+    rgba(212, 175, 55, 0.2);
+
+  box-shadow:
+    0 18px 45px
+    rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.nonveg-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 25px 55px
+    rgba(0, 0, 0, 0.35);
+}
+
+
+/* Image */
+
+.nonveg-image {
+  position: relative;
+
+  height: 235px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #4a2c1a,
+      #24140c
+    );
+}
+
+.nonveg-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.nonveg-card:hover
+.nonveg-image img {
+  transform: scale(1.07);
+}
+
+
+/* Price */
+
+.food-price {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  padding: 8px 14px;
+
+  border-radius: 30px;
+
+  background: #d4af37;
+
+  color: #24140c;
+
+  font-size: 14px;
+
+  font-weight: 800;
+}
+
+
+/* Content */
+
+.nonveg-content {
+  padding: 23px;
+}
+
+.food-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  gap: 10px;
+}
+
+.food-top h3 {
+  margin: 0;
+
+  color: #2b170c;
+
+  font-family: "Cinzel", serif;
+
+  font-size: 22px;
+}
+
+.food-rating {
+  color: #d39a16;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+.nonveg-content p {
+  margin: 13px 0 18px;
+
+  color: #6d625b;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* Bottom */
+
+.food-bottom {
+  padding-top: 14px;
+
+  border-top:
+    1px solid #eadfd4;
+
+  color: #a77a2c;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   DRINKS SECTION
+========================================================= */
+
+.drinks-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 110px 8%;
+
+  background:
+    #f7efe5;
+}
+
+
+/* Decorative circles */
+
+.gold-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.circle-one {
+  width: 320px;
+  height: 320px;
+
+  top: -180px;
+  left: -100px;
+
+  border:
+    1px solid
+    rgba(184, 132, 42, 0.2);
+}
+
+.circle-two {
+  width: 400px;
+  height: 400px;
+
+  right: -180px;
+  bottom: -200px;
+
+  border:
+    1px solid
+    rgba(184, 132, 42, 0.16);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.drink-heading {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 720px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+
+/* Small heading */
+
+.heading-line {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-bottom: 18px;
+}
+
+.heading-line span {
+  width: 38px;
+
+  height: 1px;
+
+  background: #b8842a;
+}
+
+.heading-line small {
+  color: #a47729;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+
+/* Main heading */
+
+.drink-heading h2 {
+  margin: 0 0 18px;
+
+  color: #2c1c11;
+
+  font-family: "Cinzel", serif;
+
+  font-size: 48px;
+
+  font-weight: 600;
+}
+
+.drink-heading p {
+  margin: 0;
+
+  color: #75695f;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   DRINK WRAPPER
+========================================================= */
+
+.drinks-wrapper {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1250px, 100%);
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+
+/* =========================================================
+   ROW
+========================================================= */
+
+.drink-row {
+  display: grid;
+
+  gap: 24px;
+
+  align-items: stretch;
+}
+
+
+/*
+   IMPORTANT
+
+   Both rows have same total width.
+
+   4 cards:
+   4 × 1fr
+
+   3 cards:
+   each card is same width as
+   a 4-card row.
+*/
+
+.row-four {
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+.row-three {
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  /* padding-left: 12.5%;
+  padding-right: 12.5%; */
+}
+
+
+/* =========================================================
+   DRINK CARD
+========================================================= */
+
+.drink-card {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  min-width: 0;
+
+  background: #fffdf9;
+
+  border:
+    1px solid
+    #e7d8c6;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 12px 35px
+    rgba(74, 46, 25, 0.08);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.drink-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 20px 45px
+    rgba(74, 46, 25, 0.16);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.drink-image {
+  position: relative;
+
+  height: 225px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #efe1d0,
+      #f8f0e7
+    );
+
+  overflow: hidden;
+}
+
+
+/* Image frame */
+/* 
+.image-frame {
+  width: 170px;
+  height: 170px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #fffaf3;
+
+  border:
+    1px solid
+    rgba(184, 132, 42, 0.25);
+
+  box-shadow:
+    0 12px 30px
+    rgba(60, 35, 15, 0.12);
+} */
+
+.image-frame img {
+  width: 200px;
+  height: 220px;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.45s ease;
+}
+
+.drink-card:hover
+.image-frame img {
+  transform: scale(1.08);
+}
+
+
+/* Price */
+
+.drink-price {
+  position: absolute;
+
+  right: 14px;
+  top: 14px;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  background: #3b2416;
+
+  color: #f4d77b;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.drink-content {
+  padding: 22px 22px 18px;
+
+  flex: 1;
+}
+
+
+/* Category */
+
+.drink-category {
+  color: #b8842a;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* Name */
+
+.drink-content h3 {
+  margin: 8px 0 10px;
+
+  color: #2c1c11;
+
+  font-family: "Cinzel", serif;
+
+  font-size: 21px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+}
+
+
+/* Small gold line */
+
+.small-line {
+  width: 32px;
+
+  height: 2px;
+
+  margin-bottom: 12px;
+
+  background: #d4af37;
+}
+
+
+/* Description */
+
+.drink-content p {
+  margin: 0;
+
+  color: #756b63;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.drink-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding:
+    14px 20px;
+
+  border-top:
+    1px solid
+    #eee3d7;
+
+  color: #a07836;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.4px;
+}
+
+.stars {
+  color: #d39a16;
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .nonveg-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .row-four {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .row-three {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    padding:
+      0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .nonveg-section {
+    padding:
+      75px 20px;
+  }
+
+
+  .nonveg-heading h2 {
+    font-size: 36px;
+  }
+
+
+  .nonveg-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .drinks-section {
+    padding:
+      75px 20px;
+  }
+
+
+  .drink-heading h2 {
+    font-size: 34px;
+  }
+
+
+  .drink-heading p {
+    font-size: 14px;
+  }
+
+
+  .drink-row,
+  .row-four,
+  .row-three {
+
+    grid-template-columns:
+      1fr;
+
+    padding:
+      0;
+
+    gap: 22px;
+  }
+
+
+  .drink-image {
+    height: 240px;
+  }
+
+
+  .image-frame {
+    width: 180px;
+    height: 180px;
+  }
+
+
+  .image-frame img {
+    width: 155px;
+    height: 155px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .nonveg-heading h2 {
+    font-size: 30px;
+  }
+
+
+  .drink-heading h2 {
+    font-size: 29px;
+  }
+
+
+  .drink-card {
+    border-radius: 15px;
+  }
+
+
+  .drink-content {
+    padding:
+      20px 18px 16px;
+  }
+
+}

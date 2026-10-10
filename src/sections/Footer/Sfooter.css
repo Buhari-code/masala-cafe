@@ -1,0 +1,53 @@
+.menu-footer{
+
+    background:#2B170C;
+
+    padding:35px 8%;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.menu-footer p{
+
+    color:#FFD15C;
+
+    font-size:16px;
+
+    margin-bottom:10px;
+
+    letter-spacing:1px;
+
+}
+
+.menu-footer small{
+
+    color:#BCAFA3;
+
+    font-size:14px;
+
+}
+
+@media(max-width:768px){
+
+.menu-footer{
+
+padding:30px 20px;
+
+}
+
+.menu-footer p{
+
+font-size:15px;
+
+}
+
+.menu-footer small{
+
+font-size:13px;
+
+}
+
+}
